@@ -1,0 +1,83 @@
+﻿body {
+    background-color: yellow;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+.textboxes {
+    float: left;
+    padding: 10px;
+}
+
+.headings {
+    font-weight: bold;
+}
+
+#buttons {
+    clear: both;
+    padding: 10px;
+}
+
+.results {
+    float: left;
+    padding: 10px;
+}
+
+.boxes {
+    border: 2px solid red;
+}
+
+.panel1 {
+    border: 3px solid gold;
+    width: 500px;
+    height: 300px;
+}
+
+.resultlabels {
+    background-color: gold;
+}
+
+.resulttext {
+    font-weight: bold;
+}
+
+.calendar {
+    background-color: green;
+    border: 3px solid blue;
+    padding: 3px;
+}
+
+.DayHeaderStyle-BackColor {
+    background-color: red;
+}
+
+.TitleStyle-BackColor {
+    background-color: red;
+}
+
+.TodayDayStyle-BackColor {
+    background-color: blue;
+}
+
+.WeekendDayStyle-BackColor {
+    background-color: gold;
+}
+
+.OtherMonthDayStyle-BackColor {
+    background-color: purple;
+}
+
+.SelectedDayStyle-BackColor {
+    background-color: lightblue;
+}
+
+.SelectedDayStyle-ForeColor {
+    color: white;
+}
+
+.CellPadding {
+    padding: 3px;
+}
