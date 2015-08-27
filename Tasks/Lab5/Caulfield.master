@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Tasks/Lab5/MasterPage.master" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
+    <asp:Label runat="server" CssClass="title" Text="Caulfield" />
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder3" />
+</asp:Content>
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+

@@ -1,0 +1,67 @@
+body {
+	font-size: 14px;
+	color: navy;
+	font-family: arial, helvetica, sans-serif;
+	background: white url(https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png) no-repeat top right;
+}
+
+h1 {
+	color: #ffc;
+	background-color: #009;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	background-color: #ccc;
+	margin: 20px;
+	padding: 40px;
+	border-style: dashed;
+	border-width: 3px;
+	border-left-width: 10px;
+	border-right-width: 10px;
+	border-color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-size: italic;
+	text-transform: uppercase;
+}
+
+p.hello {
+	letter-spacing: 0.5em;
+	word-spacing: 2em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+p {
+	font: 14px/1.5 "Times New Roman", times, serif;
+	padding: 30px 10px;
+	border:1px black solid;
+	border-width: 1px 5px 5px 1px;
+	border-color: red green blue yellow;
+	margin: 10px 50px;
+}
+
+li {
+	display: inline;
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+#content {
+	top: 0;
+	left: 0;
+	position: absolute;
+    margin-left: 200px;
+}

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <asp:Label CssClass="title" runat="server" Text="Bill n' Ben's Nursery" /> <br />
+            <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder2" />
+        </div>
+
+        <div id="leftside">
+            <asp:HyperLink CssClass="links" runat="server" ID="caulwholesale" NavigateUrl="~/Tasks/Lab5/CaulfieldWholesale.aspx" Text="Caulfield Wholesale" /> <br />
+            <asp:HyperLink CssClass="links" runat="server" ID="caulretail" NavigateUrl="~/Tasks/Lab5/CaulfieldRetail.aspx" Text="Caulfield Retail" />
+        </div>
+
+        <div id="content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+           
+        <div id="footer">
+
+        </div>
+    </form>
+
+</body>
+</html>
