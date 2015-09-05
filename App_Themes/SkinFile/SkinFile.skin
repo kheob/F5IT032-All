@@ -3,7 +3,7 @@
     <DynamicHoverStyle BackColor="White" />
 </asp:Menu>
 
-<asp:Calendar CssClass="calendar" SkinID="SkinFile" BackColor="White" runat="server">
+<asp:Calendar CssClass="calendar" SkinID="SkinFile" Width="100%" BackColor="White" runat="server">
     <TitleStyle BackColor="#d0baa5" />
     <SelectedDayStyle BackColor="#d0baa5" />
 </asp:Calendar>

@@ -34,7 +34,7 @@
                 </asp:Menu>
             </div>
             <asp:SiteMapDataSource ID="siteMapDataSource1" SiteMapProvider="Ass1SiteMap" runat="server" /> <br />
-            <asp:Calendar ID="calendar" CssClass="calendar" SkinID="SkinFile" runat="server" />
+            <asp:Calendar ID="calendar" SkinID="SkinFile" runat="server" />
         </div>
             <div id="content">
                 <div>
