@@ -8,4 +8,4 @@
     <SelectedDayStyle BackColor="#d0baa5" />
 </asp:Calendar>
 
-<asp:AdRotator SkinID="SkinFile" runat="server" AdvertisementFile="~/Ass1/Ads.xml" Width="645px" />
+<asp:AdRotator SkinID="SkinFile" runat="server" AdvertisementFile="~/Ass1/Ads.xml" Width="600px" />
