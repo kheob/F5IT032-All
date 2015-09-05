@@ -1,5 +1,22 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Tasks/Lab5/MasterPage.master" %>
 
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
+    <asp:Label runat="server" CssClass="title" Text="Richmond" />
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder3" />
+</asp:Content>
+
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <div class="contents">
+        <img src="richmond150.jpg" />
+    </div>
+    <div class="contents">
+        <p>Bill n' Ben's Nursery</p>
+        <p>58 Swan St Richmond</p>
+        <p>Tel: 03 8991 2342</p>
+        <p>Fax: 03 8991 2345</p>
+        <p>BnB@ozmail.com.au</p>
+        <p>www.billnben.com.au</p>
+    </div>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
 </asp:Content>
+

@@ -1,20 +1,12 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Ass1/MasterPage.master" Title="Quotees" Theme="SkinFile" %>
 
-<!DOCTYPE html>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
+    <asp:AdRotator SkinID="SkinFile" ID="adRotator1" AdvertisementFile="~/Ass1/Ads.xml" runat="server" />
+    
+    <p>Quotees is a t-shirt design company based in Melbourne, Australia. We specialise in pop culture inspired prints as well as original artwork. Welcome!</p>
+    <a href="index.aspx"><img id="smallLogo" src="Logo.gif" /></a> <br />
 
-<script runat="server">
-
-</script>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        This is my index page in the Ass1 sub folder.
-    </div>
-    </form>
-</body>
-</html>
+    <asp:HyperLink CssClass="links" runat="server" NavigateUrl="http://users.monash.edu.au/sgrose/msh/disclaimer.htm">Monash Disclaimer</asp:HyperLink> <br />
+    Email: <asp:HyperLink CssClass="links" runat="server" NavigateUrl="mailto:bckhe1@student.monash.edu">Author</asp:HyperLink> <br />
+    Email: <asp:HyperLink CssClass="links" runat="server" NavigateUrl="mailto:bckhe1@student.monash.edu">Webmaster</asp:HyperLink> <br /> <br />
+</asp:Content>

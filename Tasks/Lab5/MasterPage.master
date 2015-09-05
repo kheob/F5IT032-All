@@ -4,6 +4,11 @@
 
 <script runat="server">
 
+    void Page_Load()
+    {
+        Date.Text = DateTime.Now.ToString("dddd" + ", " + "dd" + " " + "MMMM" + " " + "yyyy");
+    }
+
 </script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,7 +27,9 @@
 
         <div id="leftside">
             <asp:HyperLink CssClass="links" runat="server" ID="caulwholesale" NavigateUrl="~/Tasks/Lab5/CaulfieldWholesale.aspx" Text="Caulfield Wholesale" /> <br />
-            <asp:HyperLink CssClass="links" runat="server" ID="caulretail" NavigateUrl="~/Tasks/Lab5/CaulfieldRetail.aspx" Text="Caulfield Retail" />
+            <asp:HyperLink CssClass="links" runat="server" ID="caulretail" NavigateUrl="~/Tasks/Lab5/CaulfieldRetail.aspx" Text="Caulfield Retail" /> <br />
+            <asp:HyperLink CssClass="links" runat="server" ID="richwholesale" NavigateUrl="~/Tasks/Lab5/RichmondWholesale.aspx" Text="Richmond Wholesale" /> <br />
+            <asp:HyperLink CssClass="links" runat="server" ID="richretail" NavigateUrl="~/Tasks/Lab5/RichmondRetail.aspx" Text="Richmond Retail" />
         </div>
 
         <div id="content">
@@ -32,7 +39,8 @@
         </div>
            
         <div id="footer">
-
+            <asp:Label runat="server" Text="Copyright Bill n' Ben" /> <br />
+            <asp:Label runat="server" cssclass="date" Text="" ID="Date" />
         </div>
     </form>
 

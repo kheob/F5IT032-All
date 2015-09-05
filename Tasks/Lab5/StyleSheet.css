@@ -20,6 +20,9 @@
     height: 50px;
     background-color: lightgoldenrodyellow;
     clear: both;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #content {
@@ -34,4 +37,16 @@
 
 .links {
     padding: 5px;
+}
+
+.date {
+    text-align: center;
+}
+
+.contents {
+    display: inline-block;
+}
+
+p {
+    line-height: 1px;
 }

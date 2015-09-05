@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://i.imgur.com/VSMyz27.jpg</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad1</AlternateText>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://i.imgur.com/k6nKb3D.jpg</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad2</AlternateText>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://i.imgur.com/ez943An.jpg</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad3</AlternateText>
+  </Ad>
+</Advertisements>
