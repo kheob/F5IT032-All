@@ -13,6 +13,7 @@
         <strong>Submission Date: </strong>Friday 11th September, 2015<br />
         <strong>Tutor's Name: </strong>Jian Liew<br />
         <strong>Email: </strong><a class="links" href="mailto:bckhe1@student.monash.edu">bckhe1@student.monash.edu</a><br />
-        <strong>Assignment Specifications: </strong><a class="links" href="http://moodle.vle.monash.edu/mod/page/view.php?id=2639809">Here</a><br />
+        <strong>Assignment Specifications: </strong><a class="links" href="http://moodle.vle.monash.edu/mod/page/view.php?id=2639809">Link</a><br />
+        <strong>Design Report: </strong><a class="links" href="DesignReport/DesignReport.pdf">Link</a>
     </div>
 </asp:Content>

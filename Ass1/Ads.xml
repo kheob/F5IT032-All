@@ -2,18 +2,18 @@
 
 <Advertisements>
   <Ad>
-    <ImageUrl>http://i.imgur.com/VSMyz27.jpg</ImageUrl>
+    <ImageUrl>Ad-1.gif</ImageUrl>
     <NavigateUrl>index.aspx</NavigateUrl>
-    <AlternateText>Ad1</AlternateText>
+    <AlternateText>Ad-1</AlternateText>
   </Ad>
   <Ad>
-    <ImageUrl>http://i.imgur.com/k6nKb3D.jpg</ImageUrl>
+    <ImageUrl>Ad-2.gif</ImageUrl>
     <NavigateUrl>index.aspx</NavigateUrl>
-    <AlternateText>Ad2</AlternateText>
+    <AlternateText>Ad-2</AlternateText>
   </Ad>
   <Ad>
-    <ImageUrl>http://i.imgur.com/ez943An.jpg</ImageUrl>
+    <ImageUrl>Ad-3.gif</ImageUrl>
     <NavigateUrl>index.aspx</NavigateUrl>
-    <AlternateText>Ad3</AlternateText>
+    <AlternateText>Ad-3</AlternateText>
   </Ad>
 </Advertisements>

@@ -35,6 +35,7 @@
             </div>
             <asp:SiteMapDataSource ID="siteMapDataSource1" SiteMapProvider="Ass1SiteMap" runat="server" /> <br />
             <asp:Calendar ID="calendar" SkinID="SkinFile" runat="server" />
+            <img src="Logo.gif" />
         </div>
             <div id="content">
                 <div>

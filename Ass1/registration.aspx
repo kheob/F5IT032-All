@@ -71,7 +71,7 @@
         <table id="table">
             <tr>
                 <td>First Name: </td>
-                <td><asp:TextBox ID="firstNameBox" runat="server" Columns="25" CausesValidation="true" /></td>
+                <td><asp:TextBox ID="firstNameBox" runat="server" Columns="20" CausesValidation="true" /></td>
                 <td>
                     <asp:RequiredFieldValidator ForeColor="Red" ControlToValidate="firstNameBox" runat="server"
                         ErrorMessage="*" />
@@ -82,7 +82,7 @@
             </tr>
             <tr>
                 <td>Last Name: </td>
-                <td><asp:TextBox ID="lastNameBox" runat="server" Columns="25" /></td>
+                <td><asp:TextBox ID="lastNameBox" runat="server" Columns="20" /></td>
                 <td><asp:RequiredFieldValidator ForeColor="Red" ControlToValidate="lastNameBox" runat="server"
                         ErrorMessage="*" />
                     <asp:CustomValidator ID="lastValidator" ControlToValidate="lastNameBox" runat="server" 
@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td>Email: </td>
-                <td><asp:TextBox ID="emailBox1" runat="server" Columns="25" /></td>
+                <td><asp:TextBox ID="emailBox1" runat="server" Columns="20" /></td>
                 <td><asp:RequiredFieldValidator ForeColor="Red" ControlToValidate="emailBox1" runat="server"
                         ErrorMessage="*" />
                     <asp:RegularExpressionValidator ForeColor="Red" ControlToValidate="emailBox1" runat="server"
@@ -102,7 +102,7 @@
             </tr>
             <tr>
                 <td>Confirm Email: </td>
-                <td><asp:TextBox ID="emailBox2" runat="server" Columns="25" /></td>
+                <td><asp:TextBox ID="emailBox2" runat="server" Columns="20" /></td>
                 <td><asp:RequiredFieldValidator ForeColor="Red" ControlToValidate="emailBox2" runat="server"
                         ErrorMessage="*" />
                     <asp:CompareValidator ForeColor="Red" ControlToValidate="emailBox2" ControlToCompare="emailBox1" runat="server"
@@ -153,9 +153,6 @@
             <tr>
                 <td><span id="red">*</span> = Required Field</td>
                 <td><asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="submitButton_Click" /></td>
-            </tr>
-            <tr>
-                <td><asp:Label ID="feedbackLabel" Visible="false" runat="server" /></td>
             </tr>
         </table>
     </div>
