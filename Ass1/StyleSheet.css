@@ -138,3 +138,14 @@ body div {
     width: 300px;
     padding: 0px 0px 20px 0px;
 }
+
+#documentation {
+    margin: auto;
+    background-color:#d0baa5;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+#documentation .links {
+    color: black;
+}
