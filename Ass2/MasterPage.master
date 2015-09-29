@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link type="text/css" rel="stylesheet" href="~/Ass2/StyleSheet.css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <form id="form1" runat="server">
+        <div id="header">
+            <a href="~/Ass2/index.aspx" runat="server"><img id="logo" src="~/Ass2/Logo.gif" runat="server"/></a>
+        </div>
+
+        <div id="body">
+        <div id="sidebar">
+            <div id="menu">
+                <asp:Menu SkinID="SkinFile" runat="server" DataSourceID="siteMapDataSource1" StaticDisplayLevels="2">
+                    <LevelMenuItemStyles>
+                        <asp:MenuItemStyle CssClass="menuLinks" />
+                        <asp:MenuItemStyle CssClass="menuLinks" />
+                        <asp:MenuItemStyle CssClass="menuLinks" />
+                    </LevelMenuItemStyles>
+                    <StaticMenuItemStyle CssClass="menuItemStyle" />
+                    <DynamicMenuItemStyle CssClass="dynamicMenuItemStyle" />
+                </asp:Menu>
+            </div>
+            <asp:SiteMapDataSource ID="siteMapDataSource1" SiteMapProvider="Ass2SiteMap" runat="server" /> <br />
+            <asp:Calendar ID="calendar" SkinID="SkinFile" runat="server" />
+            <img src="~/Ass2/Logo.gif" runat="server" />
+        </div>
+            <div id="content">
+                <div>
+                    <asp:SiteMapPath ID="siteMapPath1" SiteMapProvider="Ass2SiteMap" RenderCurrentNodeAsLink="true" runat="server">
+                        <NodeStyle CssClass="links" />
+                    </asp:SiteMapPath>
+                </div> <br />
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <p>Copyright 2015 Quotees Pty Ltd</p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

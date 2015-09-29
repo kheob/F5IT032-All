@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>Ad-1.gif</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad-1</AlternateText>
+  </Ad>
+  <Ad>
+    <ImageUrl>Ad-2.gif</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad-2</AlternateText>
+  </Ad>
+  <Ad>
+    <ImageUrl>Ad-3.gif</ImageUrl>
+    <NavigateUrl>index.aspx</NavigateUrl>
+    <AlternateText>Ad-3</AlternateText>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,190 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #eee1d1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body div {
+    height: 100%;
+}
+
+#table {
+    margin: auto;
+    background-color:#d0baa5;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+#table tr td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#body {
+    width: 900px;
+    height: 100%;
+    margin: auto;
+}
+
+#header {
+    height: 175px;
+    background-color: white;
+}
+
+#logo {
+    height: 175px;
+    display: block;
+    margin: auto;
+    padding-left: 250px;
+}
+
+#sidebar {
+    width: 250px;
+    padding-right: 20px;
+    float: left;
+}
+
+#sidebar img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#content {
+    width: 610px;
+    float: right;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#smallLogo {
+    height: 50px;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 10px 0px 0px 260px;
+}
+
+.links {
+    color: #9d826a;
+}
+
+.links2 {
+    color: black;
+}
+
+#content div {
+    padding-left: 6px;
+    text-align: left;
+}
+
+.menuLinks {
+    color: black;
+}
+
+.menuItemStyle {
+    padding: 3px 105px;
+    background-color: #d0baa5;
+}
+
+.dynamicMenuItemStyle {
+    padding: 3px 35px;
+    background-color: #d0baa5;
+}
+
+.text {
+    text-align: left;
+}
+
+.sitemap {
+    color: black;
+    padding: 2px;
+}
+
+.sitemapHover {
+    color: black;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#red {
+    color: red;
+}
+
+
+.panel {
+    margin: 10px auto;
+    width: 300px;
+    border: 10px solid #d0baa5;
+    border-radius: 15px;
+    background-color: #d0baa5;
+    padding: 0px 0px 20px 0px;
+}
+
+#sitemapdiv {
+    background-color: #d0baa5;
+    border-radius: 15px;
+    width: 300px;
+    padding: 0px 0px 20px 0px;
+}
+
+#documentation {
+    margin: auto;
+    background-color:#d0baa5;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+#documentation .links {
+    color: black;
+}
+
+.login {
+    background-color: #d0baa5;
+    height: auto;
+    width: 265px;
+    border-radius: 15px;
+    margin: auto;
+    padding: 0px 0px 15px 0px;
+}
+
+.codeHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin: auto;
+}
+
+.fileNameWrapper {
+    text-align: center;
+}
+
+.codePanel {
+    margin: auto;
+    height: auto;
+    width: auto;
+}
+
+.codePanelWrapper {
+    padding: 10px;
+    height: auto;
+    width: 900px;
+    margin: auto;
+}
+
+.codePanelWrapper div {
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+}
