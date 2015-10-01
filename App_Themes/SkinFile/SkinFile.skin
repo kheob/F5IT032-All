@@ -9,3 +9,8 @@
 </asp:Calendar>
 
 <asp:AdRotator SkinID="SkinFile" runat="server" Width="600px" />
+
+<asp:GridView SkinID="SkinFile" runat="server" CellPadding="3" Font-Names="Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif"
+    Width="600px" BackColor="White" AlternatingRowStyle-BackColor="WhiteSmoke" HeaderStyle-BackColor="#d0baa5" />
+
+<asp:TextBox SkinID="SkinFile" runat="server" Width="400px" />

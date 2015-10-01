@@ -41,5 +41,5 @@
             ValidationGroup="login"
             HeaderText="Please correct the following errors: " />
     </div>
-    <br /><a href="~/Ass2/displaycode.aspx?filename=~/login.aspx&filename2=~/Web.config" target="_blank" runat="server"><img src="Images/codebuttonlogin.jpg" /></a>
+    <br /><a href="~/Ass2/displaycode.aspx?filename=~/login.aspx&filename2=~/Web.config&filename3=~/Ass2/Locked/Web.config" target="_blank" runat="server"><img src="Images/codebuttonlogin.jpg" /></a>
 </asp:Content>

@@ -34,6 +34,7 @@
     {
         if (Page.IsValid)
         {
+            customerDS.Insert();
             userInformation.Visible = true;
             firstNameLabel.Text = "<strong>First Name: </strong>" + firstNameBox.Text;
             lastNameLabel.Text = "<strong>Last Name: </strong>" + lastNameBox.Text;
@@ -60,10 +61,61 @@
             userInformation.Visible = false;
         }
     }
+
+    protected void emailCustomValidator_ServerValidate(object source, ServerValidateEventArgs args)
+    {
+        args.IsValid = false;
+        customerDS.SelectCommand = "SELECT * FROM [Customer] WHERE [email] = '" + emailBox1.Text + "'";
+        GridView gv = new GridView();
+        gv.DataSource = customerDS;
+        gv.DataBind();
+        if (gv.Rows.Count == 0)
+        {
+            args.IsValid = true;
+            return;
+        }
+        else
+        {
+            return;
+        }
+    }
+
 </script>
 
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:AccessDataSource ID="customerDS" runat="server" DataFile="~/Ass2/Customers.accdb" 
+        DeleteCommand="DELETE FROM [Customer] WHERE [customerID] = ?" 
+        InsertCommand="INSERT INTO [Customer] ([firstname], [lastname], [email], [age], [gender], [state], [hear], [subscribe], [url]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)" 
+        SelectCommand="SELECT * FROM [Customer]" UpdateCommand="UPDATE [Customer] SET [firstname] = ?, [lastname] = ?, [email] = ?, [age] = ?, [gender] = ?, [state] = ?, [hear] = ?, [subscribe] = ?, [url] = ? WHERE [customerID] = ?">
+        <DeleteParameters>
+            <asp:Parameter Name="customerID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:ControlParameter Name="firstname" ControlID="firstNameBox" />
+            <asp:ControlParameter Name="lastname" ControlID="lastNameBox" />
+            <asp:ControlParameter Name="email" ControlID="emailBox1" />
+            <asp:ControlParameter Name="age" ControlID="ageBox" />
+            <asp:ControlParameter Name="gender" ControlID="genderList" />
+            <asp:ControlParameter Name="state" ControlID="stateList" />
+            <asp:ControlParameter Name="hear" ControlID="hearList" />
+            <asp:ControlParameter Name="subscribe" ControlID="subscribeCheckBox" />
+            <asp:Parameter Name="url" DefaultValue="http://www.google.com" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="firstname" Type="String" />
+            <asp:Parameter Name="lastname" Type="String" />
+            <asp:Parameter Name="email" Type="String" />
+            <asp:Parameter Name="age" Type="Int32" />
+            <asp:Parameter Name="gender" Type="String" />
+            <asp:Parameter Name="state" Type="String" />
+            <asp:Parameter Name="hear" Type="String" />
+            <asp:Parameter Name="subscribe" Type="String" />
+            <asp:Parameter Name="url" Type="String" />
+            <asp:Parameter Name="customerID" Type="Int32" />
+        </UpdateParameters>
+
+    </asp:AccessDataSource>
     <div class="text">       
          <h2>
             Registration
@@ -96,9 +148,14 @@
                 <td><asp:RequiredFieldValidator ForeColor="Red" ControlToValidate="emailBox1" runat="server"
                         ErrorMessage="*" />
                     <asp:RegularExpressionValidator ForeColor="Red" ControlToValidate="emailBox1" runat="server"
-                        ErrorMessage="invalid email address"
+                        ErrorMessage="Invalid email address"
                         ValidationExpression=".*@.*\..*" />
                 </td>
+            </tr>
+            <tr>
+                <td></td><td><asp:CustomValidator ID="emailCustomValidator" ControlToValidate="emailBox1" runat="server"
+                        ErrorMessage="Email already exists" ForeColor="Red"
+                        OnServerValidate="emailCustomValidator_ServerValidate" /></td>
             </tr>
             <tr>
                 <td>Confirm Email: </td>
@@ -140,7 +197,7 @@
             </tr>
             <tr>
                 <td>How did you hear about us? </td>
-                <td><asp:ListBox ID="hearList" SelectionMode="Multiple" runat="server">
+                <td><asp:ListBox ID="hearList" SelectionMode="Single" runat="server">
                         <asp:ListItem Text="Family/Friends" />
                         <asp:ListItem Text="Google" />
                         <asp:ListItem Text="Other" />
@@ -168,4 +225,7 @@
         <asp:Label ID="subscribeLabel" runat="server" /> <br />
         <asp:HyperLink ID="registrationSuccess" CssClass="links2" runat="server" NavigateUrl="http://www.google.com" Text="Click Here!" />
     </asp:Panel>
+    <br /><a href="~/Ass2/Locked/displaycustomers.aspx" target="_black" runat="server"><input type="button" value="Click here to see all the customers" /></a> <br />
+    <br /><a href="~/Ass2/Locked/searchcustomers.aspx" target="_black" runat="server"><input type="button" value="Click here to search for customers" /></a> <br />
+    <br /><a href="~/Ass2/displaycode.aspx?filename=~/Ass2/Locked/registration.aspx" target="_blank" runat="server"><img src="../../Images/codebuttonAddRecords.jpg" /></a>
 </asp:Content>

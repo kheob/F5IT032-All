@@ -1,9 +1,31 @@
 ﻿<%@ Master Language="C#" %>
 
+<%@ Import  Namespace="System.Data" %>
+
 <!DOCTYPE html>
 
 <script runat="server">
 
+    protected void calendar_DayRender(object sender, DayRenderEventArgs e)
+    {
+        calendarDS.SelectCommand = "SELECT * FROM [Calendar] WHERE eventDate = #" + e.Day.Date.ToString("MM/%d/yyyy") + "#";
+        DataView calendarDV = (DataView)calendarDS.Select(DataSourceSelectArguments.Empty);
+        DataTable calendarDT = calendarDV.ToTable();
+        if (e.Day.Date == DateTime.Now.Date) // If the date is today
+        {
+            if (calendarDV.Count > 0) // If today has an event
+            {
+                e.Cell.BackColor = System.Drawing.Color.FromArgb(208, 186, 165);
+                calendarLabel.Text = "<h3>Event scheduled today: </h3>" + 
+                                     "<strong>Description: </strong>" + calendarDT.Rows[0]["eventDescription"] + 
+                                     "<br /><strong>Time: </strong>" + calendarDT.Rows[0]["eventTime"];
+            }
+            else
+            {
+                calendarLabel.Text = "<h3>No events scheduled today</h3>";
+            }
+        }
+    }
 </script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +44,8 @@
 
         <div id="body">
         <div id="sidebar">
+            <asp:AccessDataSource ID="calendarDS" DataFile="~/Ass2/Users.accdb" runat="server"
+                SelectCommand="SELECT * FROM [Calendar]" />
             <div id="menu">
                 <asp:Menu SkinID="SkinFile" runat="server" DataSourceID="siteMapDataSource1" StaticDisplayLevels="2">
                     <LevelMenuItemStyles>
@@ -34,7 +58,8 @@
                 </asp:Menu>
             </div>
             <asp:SiteMapDataSource ID="siteMapDataSource1" SiteMapProvider="Ass2SiteMap" runat="server" /> <br />
-            <asp:Calendar ID="calendar" SkinID="SkinFile" runat="server" />
+            <asp:Calendar ID="calendar" SkinID="SkinFile" OnDayRender="calendar_DayRender" runat="server" />
+            <asp:Label ID="calendarLabel" CssClass="calendarLabel" runat="server" />
             <img src="~/Ass2/Logo.gif" runat="server" />
         </div>
             <div id="content">

@@ -50,6 +50,10 @@ body div {
     float: left;
 }
 
+.calendarLabel {
+    text-align: center;
+}
+
 #sidebar img {
     width: 100%;
     padding-top: 10px;
@@ -173,6 +177,7 @@ body div {
     margin: auto;
     height: auto;
     width: auto;
+    background-color: #d0baa5;
 }
 
 .codePanelWrapper {
@@ -183,8 +188,31 @@ body div {
 }
 
 .codePanelWrapper div {
-    margin: 10px;
+    margin: 0px 10px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
     height: auto;
+}
+
+#emailTable {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    background-color: #d0baa5;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#emailTable th {
+    text-align: center;
+}
+
+#emailTable td {
+    vertical-align: top;
+    text-align: center;
+}
+
+#emailTable tr td:first-child {
+    font-weight: bold;
+    text-align: right;
 }

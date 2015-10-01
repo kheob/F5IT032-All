@@ -63,7 +63,7 @@
     </head>
     <body>
         <div class="codePanelWrapper">
-            <asp:Label ID="fileName" CssClass="codeHeader" runat="server" /><br /><br />
+            <asp:Label ID="fileName" CssClass="codeHeader" runat="server" /><br />
             <div>
                 <asp:Panel ID="codePanel" CssClass="codePanel" runat="server">
                     <asp:Label ID="codeLabel" CssClass="codeLabel" runat="server" />
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="codePanelWrapper">
-            <asp:Label ID="fileName2" CssClass="codeHeader" runat="server" Visible="false" /><br /><br />
+            <asp:Label ID="fileName2" CssClass="codeHeader" runat="server" Visible="false" /><br />
             <div>
                 <asp:Panel ID="codePanel2" CssClass="codePanel" runat="server" Visible="false">
                     <asp:Label ID="codeLabel2" CssClass="codeLabel" runat="server" Visible="false" />
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="codePanelWrapper">
-            <asp:Label ID="fileName3" CssClass="codeHeader" runat="server" Visible="false" /><br /><br />
+            <asp:Label ID="fileName3" CssClass="codeHeader" runat="server" Visible="false" /><br />
             <div>
                 <asp:Panel ID="codePanel3" CssClass="codePanel" runat="server" Visible="false">
                     <asp:Label ID="codeLabel3" CssClass="codeLabel" runat="server" Visible="false" />

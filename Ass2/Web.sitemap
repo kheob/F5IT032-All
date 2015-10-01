@@ -11,5 +11,7 @@
     <siteMapNode url="~/Ass2/Locked/sitemap.aspx" title="Site Map" />
 
     <siteMapNode url="~/Ass2/Locked/documentation.aspx" title="Documentation" />
+
+    <siteMapNode url="~/Ass2/Locked/email.aspx" title="Send an Email" />
   </siteMapNode>
 </siteMap>
