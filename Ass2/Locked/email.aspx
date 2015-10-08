@@ -40,7 +40,7 @@
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:AccessDataSource ID="customerDS" runat="server" DataFile="~/Ass2/Customers.accdb"
-        SelectCommand="SELECT [customerID], [firstname], [lastname], [email] FROM [Customer]" />
+        SelectCommand="SELECT [customerID], [firstname], [lastname], [email] FROM [Customer] ORDER BY [lastname]" />
 
     <h2>Send an Email</h2>
     <p>Select email recipients from the list below: </p>

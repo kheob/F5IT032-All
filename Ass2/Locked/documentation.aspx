@@ -14,8 +14,8 @@
             <strong>Submission Date: </strong>Friday 9th October, 2015<br />
             <strong>Tutor's Name: </strong>Jian Liew<br />
             <strong>Email: </strong><a class="links" href="mailto:bckhe1@student.monash.edu">bckhe1@student.monash.edu</a><br />
-            <strong>Assignment Specifications: </strong><a class="links" href="http://moodle.vle.monash.edu/mod/page/view.php?id=2639835">Link</a><br />
-            <strong>Design Report: </strong><a class="links" href="DesignReport/DesignReport.pdf">Link</a>
+            <strong>Assignment Specifications: </strong><a class="links" target="_blank" href="http://moodle.vle.monash.edu/mod/page/view.php?id=2639835">Link</a><br />
+            <strong>Design Report: </strong><a class="links" href="~/Ass2/DesignReport/DesignReport.pdf" runat="server" target="_blank">Link</a>
         </div>
         <br /><a href="~/Ass2/displaycode.aspx?filename=~/Ass2/StyleSheet.css&filename2=~/Ass2/StyleSheet2.css" target="_blank" runat="server"><img src="../../Images/codebuttonCSS.jpg" /></a>
         <br /><a href="~/Ass2/displaycode.aspx?filename=~/App_Themes/SkinFile/SkinFile.skin" target="_blank" runat="server"><img src="../../Images/codebuttonSkin.jpg" /></a>
